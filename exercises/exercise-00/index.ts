@@ -1,6 +1,12 @@
 import chalk from 'chalk';
 
-const users: unknown[] = [
+interface Item {
+  name: string,
+  age: number,
+  occupation: string
+}
+
+const users: Item[] = [
     {
         name: 'Max Mustermann',
         age: 25,
@@ -13,7 +19,7 @@ const users: unknown[] = [
     }
 ];
 
-function logPerson(user: unknown) {
+function logPerson(user: Item) {
     console.log(` - ${chalk.green(user.name)}, ${user.age}`);
 }
 
