@@ -14,7 +14,13 @@ interface Admin {
     role: string;
 }
 
-type PowerUser = unknown;
+type PowerUser = unknown & {
+  type: 'powerUser';
+  name: string;
+  age: number;
+  role?: string;
+  occupation?: string
+};
 
 type Person = User | Admin | PowerUser;
 
