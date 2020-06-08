@@ -38,13 +38,13 @@ function logPerson(person: Person) {
 function filterPersons(
   persons: Person[],
   personType: "admin",
-  criteria: Criteria<Person>,
+  criteria: Partial<Person>,
 ): Admin[]
 
 function filterPersons(
   persons: Person[],
   personType: "user",
-  criteria: Criteria<Person>,
+  criteria: Partial<Person>,
 ): User[]
 
 function filterPersons(persons: Person[], personType: string, criteria: Criteria<Person>) {
