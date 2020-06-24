@@ -108,7 +108,7 @@ function requestCurrentServerTime(callback: (response: ServerTimeResponese) => v
 type CoffeeApiResponse = (
   {
     status: 'success';
-    data: unknown;
+    data: number;
   } |
   {
     status: 'error';
